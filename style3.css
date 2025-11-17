@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e5e5e5;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#form-container {
+    background: white;
+    width: 800px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "title title"
+        "subtitle subtitle"
+        "name date"
+        "email message"
+        "phone message"
+        "button button";
+    grid-gap: 25px;
+}
+
+h1 {
+    grid-area: title;
+    margin: 0;
+}
+h2 {
+    grid-area: subtitle;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+#name-field { grid-area: name; }
+#date-field { grid-area: date; }
+#email-field { grid-area: email; }
+#message-field { grid-area: message; }
+#phone-field { grid-area: phone; }
+#submit-1 { grid-area: button; }
+
+.field {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 6px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.phone-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+}
+
+#submit-1 {
+    justify-self: end;
+    padding: 14px 24px;
+    background: #4d7cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-1:hover {
+    background: #3a63d9;
+}

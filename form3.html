@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div id="form-container">
+    <form id="form">
+        <h1>Book your appointment now</h1>
+        <h2>So our team can reach out to you on time</h2>
+
+        <div id="name-field" class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="eg John Doe" required>
+        </div>
+
+        <div id="date-field" class="field">
+            <label>Available Date</label>
+            <select>
+                <option>Select</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+        </div>
+
+        <div id="email-field" class="field">
+            <label>Email</label>
+            <input type="email" placeholder="eg john@email.com" required>
+        </div>
+
+        <div id="message-field" class="field">
+            <label>Share Your Message</label>
+            <textarea placeholder="Message"></textarea>
+        </div>
+
+        <div id="phone-field" class="field">
+            <label>Phone Number</label>
+            <div class="phone-grid">
+                <select id="code-select">
+                    <option>+971</option>
+                    <option>+1</option>
+                    <option>+2</option>
+                </select>
+                <input type="number" placeholder="543210987">
+            </div>
+        </div>
+
+        <button id="submit-1" type="submit">Book Now</button>
+    </form>
+</div>
+
+</body>
+</html>

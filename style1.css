@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #darkblue;
+    font-family: Helvetica, sans-serif;
+}
+
+#form {
+    background: #1a46ff;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "subtitle subtitle"
+        "name email"
+        "phone phone"
+        "submit submit";
+    gap: 20px;
+
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+#form h1 {
+    grid-area: title;
+    font-size: 36px;
+}
+
+#form h2 {
+    grid-area: subtitle;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#name-field {
+    grid-area: name;
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#phone-field {
+    grid-area: phone;
+}
+
+#submit-field {
+    grid-area: submit;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background: white;
+    color: #1a46ff;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
